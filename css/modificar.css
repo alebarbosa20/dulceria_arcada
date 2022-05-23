@@ -1,0 +1,104 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.tabla-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 1vmin 3vmin;
+    border-radius: 30px;
+    margin: 4vmin 5vmin;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 4vmin;
+    color: black;
+    margin-top: 4vmin;
+    margin-bottom: 1vmin;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+p{
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 3vmin;
+    margin: 1.5vmin;
+}
+
+.registros {
+    font-size: 3vmin;
+    color: black;
+    margin-top: 4vmin;
+    margin-bottom: 2vmin;
+    text-align: center;
+    font-family: 'Ubuntu Condensed';
+}
+
+.tabla {
+    border-spacing: 0;
+    padding: 1vmin 3vmin;
+    border-radius: 2vmin;
+    box-shadow: 1vmin 1vmin 10px #b6b1a3;
+    background: #f7f7f7;
+    border: 0.32vmin rgb(2, 218, 49) solid;
+    margin-bottom: 1vmin;
+}
+
+th {
+    font-size: 2.8vmin;
+    font-family: 'Quicksand';
+    display: table-cell;
+    text-align: center !important;
+}
+
+tr {
+    font-size: 2.8vmin;
+    font-family: 'Quicksand';
+}
+
+td {
+    width: auto;
+    display: table-cell;
+    border-top: #d42dab 1px solid;
+    border-bottom: #d42dab 1px solid;
+}
+
+.tabla td,
+.tabla th {
+    padding: 1vmin 4vmin;
+}
+
+.modificar{
+    background: #46daff;
+    padding: 0.7vmin;
+    border-radius: 1vmin;
+    font-family: 'Quicksand';
+    color: black;
+    text-decoration: none;
+    box-shadow: 0.5vmin 0.5vmin 5px 1px #b6b1a3;
+}
+
+.modificar:hover{
+    background: #32a2be;
+}
+
+.regresar {
+    margin: 4vmin 0;
+    text-align: center;
+}
+
+.regresar a {
+    text-decoration: none;
+    font-size: 2.6vmin;
+    color: #616161;
+    font-family: 'Quicksand';
+}
+
+.regresar a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

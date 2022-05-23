@@ -1,0 +1,291 @@
+.info {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+    align-content: center;
+}
+
+.info__columna {
+    background: #FFABD8;
+    color: white;
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.contenedor img {
+    width: 300px;
+    height: 300px;
+}
+
+.info__titulo {
+    color: #FFF;
+    text-align: center;
+}
+
+.comunicate,
+.visitanos {
+    font-size: 19px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    font-family: 'Quicksand';
+}
+
+.comunicate {
+    background: #FFDAB9;
+}
+
+.visitanos {
+    background: #98FB98;
+}
+
+.lista-redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-right: 4rem;
+    padding-left: 2rem;
+}
+
+.redes-sociales {
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.redes-sociales [class^="icon-"] {
+    text-decoration: none !important;
+    color: rgb(46, 43, 43);
+    font-size: 20px;
+    text-align: center;
+}
+
+.facebook,
+.instagram,
+.whatsapp,
+.correo,
+.telefono {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.redes-sociales li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.texto-redes {
+    text-decoration: none;
+    padding-left: 1rem;
+    font-size: 17px;
+    font-family: 'Quicksand';
+    color: black;
+}
+
+.ubicacion {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.direccion a {
+    text-decoration: none;
+    text-align: center;
+    padding: 5rem;
+    font-size: 17px;
+    font-family: 'Quicksand';
+    color: black;
+}
+
+.mapa {
+    align-items: center;
+    text-align: center;
+}
+
+.mapa2{
+    display: none;
+}
+
+@media screen and (max-width:952px) {
+
+    .comunicate,
+    .visitanos {
+        font-size: 18px;
+    }
+
+    .direccion a {
+        font-size: 16px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .comunicate,
+    .visitanos {
+        font-size: 18px;
+    }
+
+    .direccion a {
+        font-size: 16px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:682px) {
+
+    .comunicate,
+    .visitanos {
+        font-size: 18px;
+    }
+
+    .direccion a {
+        font-size: 16px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .comunicate,
+    .visitanos {
+        font-size: 18px;
+    }
+
+    .direccion a {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .redes-sociales {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .facebook,
+    .instagram,
+    .whatsapp,
+    .correo,
+    .telefono {
+        padding: 0rem;
+    }
+
+    .lista-redes-sociales {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .lista-redes-sociales li{
+        text-align: left !important;
+    }
+
+    .texto-redes {
+        font-size: 16px;
+    }
+
+    .redes-sociales [class^="icon-"] {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .mapa{
+        display: none;
+    }
+
+    .mapa2{
+        display: block;
+    }
+
+    .comunicate,
+    .visitanos {
+        font-size: 15px;
+    }
+
+    .direccion a {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .redes-sociales {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .facebook,
+    .instagram,
+    .whatsapp,
+    .correo,
+    .telefono {
+        padding: 0rem;
+    }
+
+    .lista-redes-sociales {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .lista-redes-sociales li{
+        text-align: left !important;
+    }
+
+    .texto-redes {
+        font-size: 13.5px;
+    }
+
+    .redes-sociales [class^="icon-"] {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .comunicate,
+    .visitanos {
+        font-size: 15px;
+    }
+
+    .direccion a {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .redes-sociales {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .facebook,
+    .instagram,
+    .whatsapp,
+    .correo,
+    .telefono {
+        padding: 0rem;
+    }
+
+    .lista-redes-sociales {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .lista-redes-sociales li{
+        text-align: left !important;
+    }
+
+    .texto-redes {
+        font-size: 13.5px;
+    }
+
+    .redes-sociales [class^="icon-"] {
+        font-size: 15px;
+    }
+}

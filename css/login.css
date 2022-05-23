@@ -1,0 +1,87 @@
+body {
+    background: #FFF5EE;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-login {
+    padding: 5vmin;
+    background: #f7dc6f;
+    border-radius: 15px;
+    margin: 4vmin 5vmin;
+    box-shadow: 0.2rem 0.2rem 5px 2px #7c7c7c;
+}
+
+.titulo {
+    text-align: center;
+    align-items: center;
+}
+
+.login-titulo {
+    font-family: 'Lobster';
+    font-size: 6vmin;
+    font-weight: lighter;
+}
+
+.logo {
+    width: 25%;
+}
+
+.usuario-lbl,
+.contraseña-lbl {
+    text-align: left;
+    /*font-family: 'Amatic SC';*/
+    font-family: 'Quicksand';
+    font-size: 3.2vmin;
+
+}
+
+.formulario input {
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+    border: #DB7093 2px solid !important;
+    background: #ffffff;
+    border: 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 2.5vmin;
+    font-family: 'Ubuntu Condensed';
+    padding-left: 1.5vmin;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn-ingresar {
+    font-size: 3vmin;
+    font-family: 'Quicksand';
+    background: #87CEEB;
+    padding: 2vmin 8vmin;
+    border-radius: 10px;
+    box-shadow: 0.5vmin 0.5vmin 3px 1px #505050;
+    border: none;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+}
+
+.cuenta{
+    font-size: 2.5vmin;
+    font-family:'Ubuntu Condensed';
+    color: #696969;
+    text-align: center;
+}
+
+.cuenta [class^="icon-"] {
+    text-decoration: none !important;
+    color: rgb(46, 43, 43);
+    font-size: 2.2vmin;
+}
+
+.cuenta:hover{
+    text-decoration: underline;
+}

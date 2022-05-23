@@ -1,0 +1,84 @@
+body {
+    background: #F0FFF0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-registrarse {
+    padding: 5vmin;
+    background: #87CEFA;
+    border-radius: 15px;
+    margin: 4vmin 5vmin;
+    box-shadow: 0.2rem 0.2rem 5px 2px #7c7c7c;
+}
+
+.titulo {
+    text-align: center;
+    align-items: center;
+}
+
+.registrarse-titulo {
+    font-family: 'Lobster';
+    font-size: 6vmin;
+    font-weight: lighter;
+}
+
+.logo {
+    width: 25%;
+}
+
+.nombre-lbl,
+.email-lbl,
+.usuario-lbl,
+.contraseña-lbl, 
+.confcontraseña-lbl {
+    text-align: left;
+    /*font-family: 'Amatic SC';*/
+    font-family: 'Quicksand';
+    font-size: 3.2vmin;
+
+}
+
+.formulario input {
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+    border: #32CD32 2px solid !important;
+    background: #ffffff;
+    border: 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 2.5vmin;
+    font-family: 'Ubuntu Condensed';
+    padding-left: 1.5vmin;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn-registrarse {
+    font-size: 3vmin;
+    font-family: 'Quicksand';
+    background: #DC143C;
+    padding: 2vmin 8vmin;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2vmin;
+    color: white;
+}
+
+.cuenta{
+    font-size: 2vmin;
+    font-family:'Ubuntu Condensed';
+    color: #696969;
+    text-align: center;
+}
+
+.cuenta a{
+    text-decoration: underline;
+    color: #696969;
+}

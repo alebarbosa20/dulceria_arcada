@@ -1,0 +1,195 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    background: #F8F8FF;
+}
+
+.header-admin {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    background: #29b6f6;
+    margin-top: 0px;
+    width: auto;
+    padding: 1.5vmin;
+}
+
+
+.logotipo {
+    margin-left: 2vmin;
+    margin-right: 5vmin;
+    width: 6%;
+}
+
+.titulo-header {
+    font-family: 'Lobster';
+    color: white;
+    font-size: 4vmin;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #DB7093;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    position: sticky;
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    font-family: 'Quicksand';
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-menu-admin {
+    margin-left: 2.5vmin;
+}
+
+.menu [class^="btn-menu-"] {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vmin;
+    display: block;
+    padding: 2.2vmin 1.5vmin;
+
+}
+
+.btn-menu-cerrarsesion {
+    font-family: 'Quicksand';
+    font-weight: normal;
+}
+
+.menu [class^="btn-menu"]:hover,
+.select {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #3b3b3b !important;
+}
+
+.select {
+    background: #ffadba;
+}
+
+.menu [class^="btn-menu"]:hover {
+    background: #ffd9de;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cont {
+    background: #ffd0a4;
+    border-radius: 2vmin;
+    box-shadow: 1vmin 1.5vmin 10px #707070;
+    margin: 3vmin 4vmin;
+    padding: 5vmin;
+    padding-bottom: 1vmin;
+}
+
+h1 {
+    font-size: 4vmin;
+    font-family: 'Lobster';
+    font-weight: lighter;
+    text-align: center;
+    margin: 1.5vmin 0vmin;
+}
+
+.form label {
+    font-family: 'Quicksand';
+    font-size: 3vmin;
+    padding: 1vmin 3vmin;
+}
+
+.codigo input,
+.nombre input,
+.descrip input,
+.prec input,
+.exis input,
+.apellidos input,
+.telefono input, 
+.cargo input, 
+.nac input  {
+    font-family: 'Quicksand';
+    font-size: 2.5vmin;
+    padding: 0.5vmin 2vmin;
+    border: 0.4vmin #c572fc solid;
+    border-radius: 1vmin;
+    background: #f7f7f7;
+}
+
+.form textarea {
+    font-family: 'Quicksand';
+    font-size: 2.5vmin;
+    height: 12vmin;
+    border: 0.4vmin #c572fc solid;
+    border-radius: 1vmin;
+    background: #f7f7f7;
+    padding: 0.5vmin 1vmin;
+}
+
+.form select {
+    font-family: 'Quicksand';
+    font-size: 2.5vmin;
+    border: 0.4vmin #c572fc solid;
+    border-radius: 1vmin;
+    background: #f7f7f7;
+    padding: 0.3vmin 2vmin;
+}
+
+.form select option {
+    font-family: 'Verdana';
+    font-weight: lighter;
+    font-size: 2.5vmin;
+    background: #dbaff8;
+}
+
+.botones {
+    font-family: 'Quicksand';
+    font-size: 3vmin;
+    border-radius: 1vmin;
+    margin-top: 2vmin;
+    padding: 0.6vmin 2vmin;
+    text-align: center;
+}
+
+.enviar {
+    margin-right: 2vmin;
+    background: #8ff37b;
+    border: none;
+    box-shadow: 0.3vmin 0.3vmin 5px 1px #3b3b3b;
+}
+
+
+.regresar {
+    text-decoration: none;
+    font-size: 2.6vmin;
+    color: #616161;
+    font-family: 'Quicksand';
+    text-align: center;
+    padding-top: 2vmin;
+}
+
+.regresar:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

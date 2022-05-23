@@ -1,0 +1,152 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 5vmin;
+    text-align: center;
+    font-family: 'Amatic SC';
+}
+
+.opciones {
+    display: flex;
+    justify-content: stretch;
+}
+
+.acciones {
+    text-align: center;
+    display: contents;
+}
+
+.acciones label {
+    padding: 4vmin;
+    width: 40%;
+    border-radius: 2vmin;
+    color: black;
+    font-size: 3vmin;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 3vmin;
+    margin-left: 3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand';
+    box-shadow: 0.6vmin 0.6vmin 3px 2px #969696;
+}
+
+#lbl-alta {
+    background: #75ff75;
+}
+
+#lbl-baja {
+    background: #ff6b81;
+}
+
+#lbl-consulta {
+    background: #ADD8E6;
+}
+
+#lbl-modificar {
+    background: #ffe65b;
+}
+
+#lbl-alta:hover {
+    background: #53eb53;
+}
+
+#lbl-baja:hover {
+    background: #ec4a62;
+}
+
+#lbl-consulta:hover {
+    background: #75c3dd;
+}
+
+#lbl-modificar:hover {
+    background: #f3d83f;
+}
+
+#alta:checked~#lbl-alta {
+    background: #2dcc2d;
+}
+
+#baja:checked~#lbl-baja {
+    background: #d62e48;
+}
+
+#consulta:checked~#lbl-consulta {
+    background: #4da3c0;
+}
+
+#modificar:checked~#lbl-modificar {
+    background: #f0cd0b;
+}
+
+.acciones label img {
+    width: 30%;
+}
+
+#alta,
+#baja,
+#consulta,
+#modificar {
+    display: none;
+}
+
+.botones {
+    margin-top: 3vmin;
+    display: flex;
+    justify-content: center;
+
+}
+
+.enviar,
+.borrar {
+    color: black;
+    border-radius: 1vmin;
+    font-size: 3vmin;
+    padding: 3vmin;
+    text-decoration: none;
+    margin-bottom: 1vmin;
+    margin-top: 2vmin;
+    margin-right: 3vmin;
+    margin-left: 3vmin;
+    text-align: center;
+    border: none;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    box-shadow: 1vmin 1vmin 3px 1px #b1b1b1;
+}
+
+.enviar {
+    background: #58e458;
+}
+
+.borrar {
+    background: #ADD8E6;
+}
+
+.enviar:hover,
+.borrar:hover {
+    background-color: #FFBF00;
+}
+
+.regresar {
+    margin: 4vmin 0;
+    text-align: center;
+}
+
+.regresar a {
+    text-decoration: none;
+    font-size: 2.6vmin;
+    color: #616161;
+    font-family: 'Quicksand';
+}
+
+.regresar a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

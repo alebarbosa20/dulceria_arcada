@@ -1,0 +1,298 @@
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+.contamos,
+.puedes {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.contamos {
+    margin-right: 1rem;
+    background-color: #9ACD32;
+}
+
+.puedes {
+    margin-left: 1rem;
+    background-color: #66CDAA;
+}
+
+.intro-prod {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    margin-left: 4rem;
+}
+
+.intro-prod p {
+    margin-bottom: 0;
+}
+
+.prod {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+}
+
+.sabores {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+    margin-bottom: 2rem;
+}
+
+.bombones-titulo,
+.paletas-titulo,
+.chocolates-titulo,
+.aciditos-titulo,
+.chicles-titulo,
+.gomitas-titulo,
+.sabores-titulo {
+    text-align: center;
+    margin: 0.6rem;
+}
+
+.sabores-titulo img {
+    width: 15%;
+    margin: 0;
+}
+
+.bombones-titulo img,
+.paletas-titulo img,
+.chocolates-titulo img,
+.aciditos-titulo img,
+.chicles-titulo img,
+.gomitas-titulo img {
+    width: 45%;
+}
+
+.lista-choco,
+.lista-bombo,
+.lista-paleta,
+.lista-aciditos,
+.lista-chicles,
+.lista-gomitas,
+.lista-sabores {
+    list-style: none;
+    padding-left: 3rem;
+}
+
+
+.chocolates [class^="choco-item"],
+.bombones [class^="bombo-item"],
+.paletas [class^="paleta-item"],
+.aciditos [class^="acidito-item"],
+.chicles [class^="chicles-item"],
+.gomitas [class^="gomita-item"],
+.sabores1 [class^="sabor-item"],
+.sabores2 [class^="sabor-item"] {
+    text-decoration: none !important;
+    color: black;
+    font-family: 'Quicksand';
+}
+
+.chocolates [class^="choco-item"]::before,
+.bombones [class^="bombo-item"]::before,
+.paletas [class^="paleta-item"]::before,
+.aciditos [class^="acidito-item"]::before,
+.chicles [class^="chicles-item"]::before,
+.gomitas [class^="gomita-item"]::before,
+.sabores1 [class^="sabor-item"]::before,
+.sabores2 [class^="sabor-item"]::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 1rem;
+}
+
+.chocolates [class^="choco-item"]::before {
+    background-image: url(../img/chocolate-icono.png);
+}
+
+.bombones [class^="bombo-item"]::before {
+    background-image: url(../img/bombon-icono.png);
+}
+
+.paletas [class^="paleta-item"]::before {
+    background-image: url(../img/paleta-icono.png);
+}
+
+.aciditos [class^="acidito-item"]::before {
+    background-image: url(../img/aciditos-icono.png);
+}
+
+.chicles [class^="chicles-item"]::before {
+    background-image: url(../img/chicle-icono.png);
+}
+
+.gomitas [class^="gomita-item"]::before {
+    background-image: url(../img/gomitas-icono.png);
+}
+
+.sabores1 [class^="sabor-item"]::before,
+.sabores2 [class^="sabor-item"]::before {
+    background-image: url(../img/papas-icono.png);
+}
+
+.intro-papas {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #DAA520;
+    border-radius: 20px;
+}
+
+.intro-papas p {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactar {
+    margin: 2vmin;
+    font-family: 'Quicksand';
+    font-size: 3vmin;
+    padding: 2vmin;
+    padding-bottom: 5vmin;
+    text-align: center;
+    border-radius: 1vmin;
+    background-color: #66CDAA;
+}
+
+.contactar a{
+    font-family: 'Quicksand';
+    font-size: 2.4vmin;
+    padding: 1.5vmin;
+    text-align: center;
+    border-radius: 1vmin;
+    background-color: #9ACD32;
+    box-shadow: 1vmin 1.5vmin 10px #707070;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3vmin !important;
+}
+
+.contactar a:hover{
+    font-size: 2.5vmin;
+    background-color: #d65997;
+}
+
+@media screen and (max-width:952px) {
+    .contamos,
+    .puedes {
+        font-size: 19px;
+    }
+
+    .intro-prod {
+        font-size: 19px;
+    }
+
+    .intro-papas p {
+        font-size: 19px;
+    }
+
+    .sabores-titulo img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contamos,
+    .puedes {
+        font-size: 19px;
+    }
+
+    .intro-prod {
+        font-size: 19px;
+    }
+
+    .intro-papas p {
+        font-size: 19px;
+    }
+
+    .sabores-titulo img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:682px) {
+    .contamos,
+    .puedes {
+        font-size: 19px;
+    }
+
+    .intro-prod {
+        font-size: 19px;
+    }
+
+    .intro-papas p {
+        font-size: 19px;
+    }
+
+    .sabores-titulo img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:462px) {
+    .contamos,
+    .puedes {
+        font-size: 16px;
+    }
+
+    .intro-prod {
+        font-size: 16px;
+    }
+
+    .intro-papas p {
+        font-size: 16px;
+    }
+
+    .sabores-titulo img {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .informacion{
+        margin: 2rem;
+    }
+
+    .contamos,
+    .puedes {
+        font-size: 15px;
+    }
+
+    .intro-prod {
+        font-size: 15px;
+        margin-left: 3rem;
+    }
+
+    .prod{
+        margin: 0rem;
+    }
+    .intro-papas p {
+        font-size: 15px;
+        
+    }
+
+    .lista-sabores{
+        padding-left: 0rem;
+    }
+    .sabores-titulo img {
+        width: 35%;
+    }
+}

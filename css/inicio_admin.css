@@ -1,0 +1,244 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    background: #F8F8FF;
+}
+
+#btn-menu {
+    display: none;
+    float: left;
+
+}
+
+.img-menu {
+    width: 6vmin;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    align-items: center;
+    margin-right: 2vmin;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.header-admin {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    background: #29b6f6;
+    margin-top: 0px;
+    width: auto;
+    padding: 1.5vmin;
+}
+
+
+.logotipo {
+    margin-left: 2vmin;
+    margin-right: 5vmin;
+    width: 8%;
+}
+
+.titulo-header {
+    font-family: 'Lobster';
+    color: white;
+    font-size: 5vmin;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #DB7093;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    position: sticky;
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    font-family: 'Quicksand';
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-menu-admin {
+    margin-left: 2.5vmin;
+}
+
+.menu [class^="btn-menu-"] {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vmin;
+    display: block;
+    padding: 2.2vmin 1.5vmin;
+
+}
+
+.btn-menu-cerrarsesion {
+    font-family: 'Quicksand';
+    font-weight: normal;
+}
+
+.menu [class^="btn-menu"]:hover,
+.select {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #3b3b3b !important;
+}
+
+.select {
+    background: #ffadba;
+}
+
+.menu [class^="btn-menu"]:hover {
+    background: #ffd9de;
+}
+
+.bienvenido {
+    font-family: 'Amatic SC';
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.op-admin {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 10vmin;
+}
+
+.opcion-productos a,
+.opcion-empleados a,
+.opcion-galeria a,
+.opcion-usuarios a {
+    text-decoration: none;
+    font-size: 3vmin;
+    font-family: 'Quicksand';
+    color: black;
+}
+
+.opcion-productos,
+.opcion-empleados,
+.opcion-galeria,
+.opcion-usuarios {
+    padding: 2vmin;
+    border-radius: 1.2vmin;
+    text-align: center;
+    margin-bottom: 4vmin;
+    box-shadow: 1vmin 1vmin 3px 1px #505050;
+    margin-right: 4vmin;
+    width: 30%;
+    height: 20%;
+}
+
+.opcion-productos img,
+.opcion-empleados img,
+.opcion-galeria img,
+.opcion-usuarios img {
+    width: 40%;
+    margin-top: 0.4vmin;
+}
+
+
+
+.opcion-productos {
+    background: #ADD8E6;
+}
+
+.opcion-empleados {
+    background: #ff6b81;
+}
+
+.opcion-galeria {
+    background: #ffe65b;
+}
+
+.opcion-usuarios {
+    background: #75ff75;
+}
+
+.opcion-productos:hover,
+.opcion-empleados:hover,
+.opcion-galeria:hover,
+.opcion-usuarios:hover {
+    padding: 2.5vmin;
+    box-shadow: 1.2vmin 1.2vmin 3px 1px #505050;
+    font-size: 3.5vmin;
+}
+
+.reporte {
+    font-family: 'Quicksand';
+    font-size: 2.4vmin;
+    padding: 1.5vmin;
+    text-align: center;
+    border-radius: 1vmin;
+    background-color: #b2d865;
+    box-shadow: 1vmin 1vmin 10px #707070;
+    text-decoration: none;
+    color: black;
+    margin: 1vmin;
+}
+
+.reporte:hover {
+    font-size: 2.45vmin;
+    background-color: #65d89f;
+}
+
+@media screen and (max-width:768px) {
+
+    header label {
+        display: block;
+    }
+
+    .menu li {
+        margin-right: 0;
+    }
+
+    .menu-op {
+        position: absolute;
+        background-color: #DB7093;
+        top: 30px;
+        width: 38%;
+        height: 100vh;
+        margin-left: -40%;
+        transition: all .5s;
+    }
+
+    .menu-op li {
+        text-align: center;
+        border-top: 1px solid #fff;
+        line-height: 1.5rem;
+    }
+
+    .menu-op ul {
+        flex-direction: column;
+    }
+
+    #btn-menu:checked~.menu-op {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:462px) {
+    .titulo-header {
+        font-size: 3vmin;
+    }
+}

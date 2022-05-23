@@ -1,0 +1,518 @@
+body {
+    font-family: Arial, Helvetica, 'Amatic SC', sans-serif;
+    padding: 0;
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menú */
+
+.img-menu {
+    width: 30px;
+}
+
+#btn-menu {
+    display: none;
+    float: right;
+    
+}
+
+.arriba{
+    position: sticky !important;
+    top: 90vh;
+    margin: 0;
+    text-align: left;
+    margin-left: 3vmin;
+    display: flex;
+    width: 15vmin;
+}
+.arriba img{
+    width: 10vmin;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    align-items: center;
+    margin-right: 2vmin;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.banner {
+    height: auto;
+    width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+.logotipo {
+    width: 70px;
+    margin-left: 1em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F08080;
+    padding: .2em;
+    width: auto;
+    position: sticky !important;
+    top: 0px;
+
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    font-family: 'Quicksand';
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu [class^="btn-menu"] {
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.menu [class^="btn-menu"]:hover,
+.select {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: white !important;
+}
+
+.select {
+    background: #CD5C5C;
+}
+
+.menu [class^="btn-menu"]:hover {
+    background: #f59898;
+}
+
+.productos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.somos {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 2rem;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+    background-color: #FFEFD5;
+    border-radius: 5px;
+}
+
+.btn-conocenos {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn-conocenos a {
+    background: goldenrod;
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 24px;
+    font-family: 'Ubuntu Condensed';
+    box-shadow: 0.3rem 0.3rem 5px 1px #3b3b3b;
+}
+
+.btn-conocenos a:hover {
+    font-size: 26px;
+    font-family: 'Ubuntu Condensed';
+}
+
+.texto-instalaciones {
+    text-align: left;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background: #98FB98;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.texto1,
+.texto2 {
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.texto1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.texto2 {
+    font-size: 18px;
+}
+
+/* Slider */
+
+.texto-papas {
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    padding: 1.5rem;
+    margin: 2rem;
+    background: #87CEFA;
+    border-radius: 5px;
+}
+
+.texto-unicos {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* **********************Pie de Página ********************************* */
+.pie-pag {
+    padding: 1rem;
+    padding-top: 2rem;
+    background: #D8BFD8;
+    margin-top: auto;
+}
+
+.redes {
+    text-align: center;
+}
+
+.redes [class^="icon-"] {
+    text-decoration: none !important;
+    color: rgb(46, 43, 43);
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.empresa {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Ubuntu Condensed';
+    color: rgb(46, 43, 43);
+}
+
+.dots {
+    text-decoration: none !important;
+    width: 3%;
+    margin-right: 1.5rem;
+    float: right;
+}
+
+/* ***************************** RESPONSIVE ***************************** */
+@media screen and (max-width:952px) {
+    .menu [class^="btn-menu"] {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .menu [class^="btn-menu"] {
+        font-size: 0.9rem;
+    }
+
+    header label {
+        display: block;
+    }
+
+    .menu li {
+        margin-right: 0;
+    }
+    .menu-op {
+        position: absolute;
+        background-color: #CD5C5C;
+        top: 65px;
+        width: 38%;
+        height: 100vh;
+        margin-left: -40%;
+        transition: all .5s;
+    }
+
+    .menu-op li {
+        text-align: center;
+        border-top: 1px solid #fff;
+        line-height: 1.5rem;
+    }
+
+    .menu-op ul {
+        flex-direction: column;
+    }
+
+    #btn-menu:checked~.menu-op {
+        margin: 0;
+    }
+
+    .somos {
+        margin-left: 6rem;
+        margin-right: 6rem;
+        margin-bottom: 1.9rem;
+        font-size: 17px;
+        padding: 30px 50px;
+    }
+
+    .btn-conocenos {
+        margin-top: 1.7rem;
+    }
+
+    .btn-conocenos a {
+        padding: 15px 25px;
+        font-size: 20px;
+        box-shadow: 0.3rem 0.3rem 5px 1px #3b3b3b;
+    }
+
+    .btn-conocenos a:hover {
+        font-size: 21px;
+    }
+
+    .texto-instalaciones {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding: 1.6rem;
+    }
+
+    .texto1 {
+        font-size: 19px;
+    }
+
+    .texto2 {
+        font-size: 17px;
+    }
+
+    .slider {
+        width: 60%;
+    }
+
+    .texto-papas {
+        font-size: 17px;
+        padding: 1.2rem;
+        margin: 1.8rem;
+    }
+
+    .redes [class^="icon-"] {
+        font-size: 18px;
+    }
+
+    .empresa {
+        font-size: 18px;
+    }
+
+    .pie-pag {
+        padding: 1.4rem;
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width:682px) {
+    .menu [class^="btn-menu"] {
+        font-size: 0.8rem;
+    }
+
+    .somos {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 1.5rem;
+        font-size: 15px;
+        padding: 25px 50px;
+    }
+
+    .btn-conocenos {
+        margin-top: 1.5rem;
+    }
+
+    .btn-conocenos a {
+        padding: 10px 15px;
+        font-size: 19px;
+        box-shadow: 0.2rem 0.2rem 5px 1px #3b3b3b;
+    }
+
+    .btn-conocenos a:hover {
+        font-size: 20.5px;
+    }
+
+    .texto-instalaciones {
+        margin-right: 1.6rem;
+        margin-left: 1.6rem;
+        padding: 1.3rem;
+    }
+
+    .texto1 {
+        font-size: 17px;
+    }
+
+    .texto2 {
+        font-size: 16px;
+    }
+
+    .slider {
+        width: 65%;
+    }
+
+    .texto-papas {
+        font-size: 16px;
+        padding: 1rem;
+        margin: 1.5rem;
+    }
+
+    .redes [class^="icon-"] {
+        font-size: 16px;
+    }
+
+    .empresa {
+        font-size: 16px;
+    }
+
+    .pie-pag {
+        padding: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width:462px) {
+    .menu [class^="btn-menu"] {
+        font-size: 0.7rem;
+    }
+
+    .somos {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 1.5rem;
+        font-size: 14px;
+        padding: 15px 30px 25px 30px;
+    }
+
+    .btn-conocenos a {
+        padding: 10px 15px;
+        font-size: 14px;
+        box-shadow: 0.2rem 0.2rem 5px 1px #3b3b3b;
+    }
+
+    .btn-conocenos a:hover {
+        font-size: 15px;
+    }
+
+    .texto-instalaciones {
+        margin-right: 1.4rem;
+        margin-left: 1.4rem;
+        padding: 1rem;
+    }
+
+    .texto1 {
+        font-size: 16px;
+    }
+
+    .texto2 {
+        font-size: 14px;
+    }
+
+    .slider {
+        width: 70%;
+    }
+
+    .texto-papas {
+        font-size: 14px;
+        padding: 0.9rem;
+        margin: 1.2rem;
+    }
+
+    .redes [class^="icon-"] {
+        font-size: 14px;
+    }
+
+    .empresa {
+        font-size: 14px;
+    }
+
+    .pie-pag {
+        padding: 0.8rem;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .menu [class^="btn-menu"] {
+        font-size: 0.5rem;
+    }
+
+    .somos {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 12px;
+        padding: 10px 20px 15px 20px;
+    }
+
+    .btn-conocenos a {
+        padding: 8px 12px;
+        font-size: 12px;
+        box-shadow: 0.2rem 0.2rem 5px 1px #3b3b3b;
+    }
+
+    .btn-conocenos a:hover {
+        font-size: 13px;
+    }
+
+    .texto-instalaciones {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    .texto1 {
+        font-size: 14px;
+    }
+
+    .texto2 {
+        font-size: 12px;
+    }
+
+    .slider {
+        width: 70%;
+    }
+
+    .texto-papas {
+        font-size: 12px;
+        padding: 0.7rem;
+        margin: 1rem;
+    }
+
+    .redes [class^="icon-"] {
+        font-size: 12px;
+    }
+
+    .empresa {
+        font-size: 12px;
+    }
+
+    .pie-pag {
+        padding: 0.6rem;
+        padding-top: 1rem;
+    }
+
+}

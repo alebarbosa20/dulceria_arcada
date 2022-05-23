@@ -1,0 +1,16 @@
+.carousel {
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vmin;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+}
+
+.w-100 {
+    width: 100% !important;
+}

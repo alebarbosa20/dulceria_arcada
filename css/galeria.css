@@ -1,0 +1,29 @@
+.carousel {
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    align-self: center;
+    margin-bottom: 3vmin;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.contamos,
+.puedes {
+    font-family: 'Quicksand';
+    font-size: 3vmin;
+    padding: 4vmin;
+    text-align: center;
+    border-radius: 2vmin;
+    background-color: #9ACD32;
+    margin: 4vmin 2vmin;
+}
